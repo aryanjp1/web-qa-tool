@@ -24,8 +24,32 @@ A web-based application that ingests content from URLs and answers questions bas
 
 ## Setup Instructions
 
+
+
+
 ### Local Development
 1. **Clone the Repository**:
+
+
+Install Dependencies:
+bash
+
+pip install -r requirements.txt
+
+Set Environment Variables:
+Create a .env file in the root directory:
+txt
+
+OPENAI_API_KEY=your-openai-api-key-here
+
+Run the Application:
+bash
+
+uvicorn main:app --reload
+
+Open http://127.0.0.1:8000 in your browser.
+
+
    ```bash
    git clone https://github.com/aryanjp1/web-qa-tool.git
    cd web-qa-tool
