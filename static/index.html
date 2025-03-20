@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Content Q&A Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Content Q&A Tool</h1>
+            <p>Enter URLs to analyze, then ask questions about their content</p>
+        </header>
+
+        <div class="url-section">
+            <h2>Step 1: Add URLs</h2>
+            <div class="url-input-container">
+                <input type="text" id="url-input" placeholder="e.g., https://example.com" class="url-input">
+                <button id="add-url-btn" class="btn add-btn">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </div>
+            <div id="url-list" class="url-list"></div>
+            <button id="ingest-urls-btn" class="btn primary-btn" disabled>
+                <i class="fas fa-download"></i> Ingest URLs
+            </button>
+            <div id="ingest-status" class="status-message"></div>
+        </div>
+
+        <div class="qa-section">
+            <h2>Step 2: Ask Questions</h2>
+            <div class="question-container">
+                <textarea id="question-input" placeholder="Ask about the ingested content..." class="question-input" disabled></textarea>
+                <button id="ask-btn" class="btn primary-btn" disabled>
+                    <i class="fas fa-search"></i> Get Answer
+                </button>
+            </div>
+            <div id="answer-container" class="answer-container hidden">
+                <div class="answer-header">
+                    <h3>Answer:</h3>
+                </div>
+                <div id="answer-content" class="answer-content"></div>
+            </div>
+            <div id="question-status" class="status-message"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
