@@ -6,7 +6,7 @@ langchain==0.0.335
 langchain-community==0.0.20
 langchain-huggingface==0.0.3
 langchain-openai==0.0.3
-sentence-transformers==2.2.2
+sentence-transformers==2.7.0
 faiss-cpu==1.7.4
 python-multipart==0.0.9
 python-dotenv==1.0.0
